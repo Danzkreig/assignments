@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+.grid {
+  display: grid;
+  grid-template-areas:
+    "phone phone   howto howto"
+    "newk retina   retina icloud"
+    "gamesp laptop   laptop icloud"
+    "twitter much display display";
+  padding: 0px;
+}
+.item1 {
+  grid-area: phone;
+  background-color: white;
+  padding: 240px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.item2 {
+  grid-area: howto;
+  background-color: #f7f8f9;
+  padding: 240px 0;
+}
+.item3 {
+  grid-area: newk;
+  background-color: #f05638;
+  padding: 240px 0;
+}
+.item4 {
+  grid-area: retina;
+  background-color: white;
+  padding: 240px 0;
+}
+.item5 {
+  grid-area: icloud;
+  background-color: #8f76bc;
+  padding: 240px 0;
+}
+.item6 {
+  grid-area: gamesp;
+  background-color: white;
+  padding: 240px 0;
+}
+.item7 {
+  grid-area: laptop;
+  background-color: goldenrod;
+  padding: 240px 0;
+}
+.item8 {
+  grid-area: twitter;
+  background-color: #37d5f4;
+  padding: 100px 0;
+}
+.item9 {
+  grid-area: much;
+  background-color: #f7f8f9;
+  padding: 100px 0;
+}
+.item10 {
+  grid-area: display;
+  background-color: #2c2c2c;
+  padding: 100px 0;
+}
+/* fonts */
+h1 {
+  font-family: Arvo, sans-serif;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: Arvo, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.heading-4 {
+  display: block;
+  max-width: 230px;
+  margin-bottom: 0px;
+}
+.heading-5 {
+  margin-bottom: auto;
+}
+.text-block-2 {
+  width: 80%;
+  max-width: 145px;
+}
+.caps {
+  font-family: Montserrat, sans-serif;
+  color: #9fa3a7;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+/* colors */
+.black {
+  color: #101010;
+}
+.black-bg {
+  background-color: #101010;
+}
+.grey {
+  color: #303030;
+}
+.grey-bg {
+  background-color: #303030;
+}
+.green {
+  color: #1ac74a;
+}
+.green-bg {
+  background-color: #1ac74a;
+}
+.white {
+  color: white;
+}
+/*colors end*/
