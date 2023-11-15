@@ -1,0 +1,55 @@
+* {
+  margin: 0px;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.button {
+  background: green;
+  border: 2px solid grey;
+  color: white;
+  display: inline-block;
+  overflow: hidden;
+  padding: 15px 45px 15px 40px;
+  position: relative;
+  text-decoration: none;
+  transition: 0.4s ease;
+  z-index: 1;
+  ::before,
+  ::after {
+    background: grey;
+    transition: 0.3s ease;
+    content: "";
+    position: absolute;
+    z-index: -1;
+  }
+}
+.button:hover {
+  animation: fill 1s;
+  left: 0;
+}
+@keyframes fill {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: red;
+  }
+}
+.left {
+  ::before {
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  :hover {
+    ::before {
+      right: 0;
+    }
+  }
+}

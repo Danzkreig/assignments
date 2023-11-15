@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+}
+.center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.shape {
+    height: 400px;
+    width: 400px;
+    background-color: #ff0000;
+    transition: 1s;
+}
+.shape:hover {
+    transform: rotate(360deg);
+    background-color: green;
+    box-shadow: 38px 27px 0px 2px darkgreen;
+    transition: transform 1s, background-color 1s;
+}

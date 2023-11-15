@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+.back {
+    background-color: white;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.button {
+    height: 90px;
+    width: 170px;
+    background-color: green;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+}
+div.back {
+    pointer-events: none;
+}
+div.button {
+    pointer-events: auto;
+}
+.buttonp {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    position: relative;
+    
+    left: 5px;
+    transition: 1s;
+}
+.button:hover .buttonp {
+    transform:translateX(100px);
+    box-shadow: inset 16px 0px #000, inset 16px 0px 1px 2px #000;
+    transition: transform 1s, box-shadow 1s;
+
+}
+div.back:hover {
+    background-color: black;
+    transition: background-color 1s;
+}

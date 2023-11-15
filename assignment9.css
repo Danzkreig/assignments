@@ -1,0 +1,40 @@
+* {
+    margin:0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+img {
+    height: 20vh;
+    width: 10vw;
+    position:absolute;
+    transition: 1s;
+}
+img:hover {
+    height: 30vh;
+    width: 10vw;
+    transition: 1s;
+}
+.overlord {
+    display:flex;
+}
+
+.overlord:hover .i1{
+    transform: rotate(30deg);
+    transform-origin: bottom left;
+}
+.overlord:hover .i2 {
+    transform: rotate(15deg);
+    transform-origin: bottom left;
+}
+.overlord:hover .i4 {
+    transform: rotate(-15deg);
+    transform-origin: bottom left;
+}
+.overlord:hover .i5 {
+    transform: rotate(-30deg);
+    transform-origin: bottom left;
+}

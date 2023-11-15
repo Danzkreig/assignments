@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+#rotatingText {
+  animation: spin 10s linear reverse infinite;
+  transform-origin: 50% 50%;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+}
+
+.main img {
+  position: absolute;
+  animation: spin 10s linear infinite;
+}
+.text {
+  font-weight: 600;
+  font-size: 14.5px;
+}

@@ -1,0 +1,19 @@
+* {
+    margin:0;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;;
+}
+img {
+    height: 15vh;
+    width: 15vw;
+    transition: 1s;
+}
+img:hover {
+    height: 30vh;
+    width: 30vw;
+    transition: all 1s;
+}

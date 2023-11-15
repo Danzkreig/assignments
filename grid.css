@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+}
+.item1 {
+  grid-area: header;
+  background-color: aquamarine;
+  padding: 100px 0;
+}
+.item2 {
+  grid-area: menu;
+  background-color: blueviolet;
+  padding: 150px 0;
+}
+.item3 {
+  grid-area: main;
+  background-color: coral;
+  padding: 100px 0;
+}
+.item4 {
+  grid-area: right;
+  background-color: khaki;
+  padding: 150px 0;
+}
+.item5 {
+  grid-area: footer;
+  background-color: firebrick;
+  padding: 50px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header header header main main main"
+    "menu menu right right right right"
+    "footer footer footer footer footer footer";
+  gap: 10px;
+  padding: 10px;
+}

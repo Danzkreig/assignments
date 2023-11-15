@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.shape {
+  height: 300px;
+  width: 300px;
+  background-color: hotpink;
+  transition: 1s;
+}
+.shape:hover {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: aqua;
+  transform: rotate(180deg);
+  transition: height 1s, width 1s, border-radius 1s, background-color 0.5s,
+    transform 0.5s;
+}
+.shape:active {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid black;
+  border-radius: 0px;
+  transform: rotate(360deg);
+  background-color: transparent;
+  transition: all 1s;
+}

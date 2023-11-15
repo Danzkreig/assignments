@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vw
+}
+.shape {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    background-color: aqua;
+    perspective: 1000px;
+    transition: 1s;
+}
+.shape:hover {
+    transform: rotateY(180deg);
+    transition: transform 1s;
+}
