@@ -2,11 +2,80 @@
   margin: 0;
 }
 img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-  max-width: 100%;
-  vertical-align: middle;
+  object-fit: contain;
+}
+.buttonlike {
+  height: 0px;
+  width: 0px;
+  border-top: 10px;
+  border-right: 44px;
+  border-left: 44px;
+  border-bottom: 10px;
+  border-radius: 10%;
+  border-style: solid;
+  border-color: #fa684f;
+  color: white;
+  position: relative;
+  top: 30px;
+  left: 30px;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+.arrowlink {
   display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #27b9c2;
+}
+.phone {
+  width: 20%;
+  max-height: 100%;
+  display: inline-block;
+  margin-top: 220px;
+  margin-left: 150px;
+}
+.console {
+  width: 60%;
+  max-height: 100%;
+  margin-right: 50px;
+}
+.keyboard {
+  width: 80%;
+  height: 40%;
+  display: inline-block;
+}
+.mac {
+  height: 40%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  right: 150px;
+}
+.item4 img {
+  align-items: flex-end;
+  top: 37px;
+}
+.laptop {
+  position: relative;
+  left: -7%;
+  width: 90%;
+}
+
+.floppy {
+  width: 20%;
+  max-height: 100%;
+}
+.tv {
+  width: 20%;
+  max-height: 100%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 26px;
 }
 .grid {
   display: grid;
@@ -17,59 +86,105 @@ img {
     "twitter much display display";
   padding: 0px;
 }
+@media only screen and (max-width: 990px) {
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "howto howto"
+      "phone phone"
+      "newk gamesp"
+      "retina retina"
+      "twitter icloud"
+      "laptop icloud"
+      "much much"
+      "display display";
+    padding: 0px;
+  }
+}
+.space-evenly {
+  justify-content: space-evenly;
+}
+.space-around {
+  justify-content: space-around;
+}
+.space-between {
+  justify-content: space-between;
+}
+.flex {
+  display: flex;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.align-center {
+  align-items: center;
+}
+.row {
+  flex-direction: row;
+}
+.column {
+  flex-direction: column;
+}
 .item1 {
   grid-area: phone;
   background-color: white;
-  padding: 240px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  object-fit: cover;
+  height: 480px;
 }
 .item2 {
   grid-area: howto;
   background-color: #f7f8f9;
-  padding: 240px 0;
+  height: 480px;
+  text-align: center;
 }
 .item3 {
   grid-area: newk;
   background-color: #f05638;
-  padding: 240px 0;
+  object-fit: cover;
+  height: 480px;
+  z-index: 2;
 }
 .item4 {
   grid-area: retina;
   background-color: white;
-  padding: 240px 0;
+  height: 480px;
 }
 .item5 {
   grid-area: icloud;
   background-color: #8f76bc;
-  padding: 240px 0;
 }
 .item6 {
   grid-area: gamesp;
   background-color: white;
-  padding: 240px 0;
+  height: 480px;
 }
 .item7 {
   grid-area: laptop;
-  background-color: goldenrod;
-  padding: 240px 0;
+  background-color: #93b6b7;
+  height: 480px;
+  background-image: url("https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2f42d5a5ed97dab707e7e_UX.png");
+  background-position: 50% 100%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
 }
 .item8 {
   grid-area: twitter;
   background-color: #37d5f4;
-  padding: 100px 0;
+  height: 240px;
 }
 .item9 {
   grid-area: much;
   background-color: #f7f8f9;
-  padding: 100px 0;
+  height: 240px;
 }
 .item10 {
   grid-area: display;
   background-color: #2c2c2c;
-  padding: 100px 0;
+  height: 240px;
 }
 /* fonts */
 h1 {
@@ -108,6 +223,14 @@ h3 {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+.h1 {
+  font-family: Arvo, sans-serif;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 400;
+  text-align: center;
+  flex: 1;
+}
 /* colors */
 .black {
   color: #101010;
@@ -116,7 +239,7 @@ h3 {
   background-color: #101010;
 }
 .grey {
-  color: #303030;
+  color: #9fa3a7;
 }
 .grey-bg {
   background-color: #303030;
@@ -131,3 +254,34 @@ h3 {
   color: white;
 }
 /*colors end*/
+@media only screen and (max-width: 990px) {
+  .item8 {
+    height: 330px;
+  }
+  .item7 {
+    height: 330px;
+  }
+  .item5 {
+  }
+}
+@media only screen and (max-width: 480px) {
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "howto"
+      "phone"
+      "newk "
+      "gamesp"
+      "retina"
+      "twitter"
+      "laptop"
+      "icloud"
+      "icloud"
+      " much"
+      " display";
+    padding: 0px;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
