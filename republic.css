@@ -21,6 +21,22 @@ img {
   font-size: 9px;
   letter-spacing: 1px;
 }
+.buttonlike2 {
+  height: 0px;
+  width: 0px;
+  border-top: 10px;
+  border-right: 44px;
+  border-left: 44px;
+  border-bottom: 10px;
+  border-radius: 10%;
+  border-style: solid;
+  border-color: #7bc424;
+  color: white;
+  position: relative;
+  top: -20px;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
 .arrowlink {
   display: inline-block;
   margin-top: 20px;
