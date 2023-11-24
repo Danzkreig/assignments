@@ -326,6 +326,94 @@ body {
 .topics div h3 {
   font-weight: 100;
 }
+/* discussion */
+.bottomgrid {
+  display: grid;
+  grid-template-areas:
+    "bigsquare bigsquare square1 square2"
+    "bigsquare bigsquare square3 square4";
+}
+.square1 {
+  grid-area: square1;
+  width: 15vw;
+  height: 30vh;
+}
+.square2 {
+  grid-area: square2;
+  width: 15vw;
+  height: 30vh;
+}
+.square3 {
+  grid-area: square3;
+  width: 15vw;
+  height: 30vh;
+}
+.square4 {
+  grid-area: square4;
+  width: 15vw;
+  height: 30vh;
+}
+.squareimg {
+  width: 15vw;
+  height: 30vh;
+  transition: all 0.3s ease-in-out;
+}
+.bigsquare:hover img {
+  transform: scale(1.1);
+  position: relative;
+  bottom: 20px;
+  right: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.bottomgrid div:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+.bottomgrid div:hover div div {
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+.bottomgrid div {
+  overflow: hidden;
+}
+.bottomgrid div div h3 {
+  font-weight: 100;
+}
+.discussiontext {
+  position: relative;
+  bottom: 10vh;
+  color: white;
+  gap: 1vh;
+  margin-left: 10px;
+  font-weight: 100;
+}
+.shitborder {
+  border-top: 7px;
+  border-bottom: 7px;
+  border-right: 3px;
+  border-left: 3px;
+  border-radius: 3px;
+  border-color: brown;
+  border-style: solid;
+  display: inline;
+  background-color: brown;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease-in-out;
+}
+.bigsquare {
+  grid-area: bigsquare;
+  width: 30vw;
+  height: 65vh;
+  transition: all 0.3s ease-in-out;
+}
+.bigsquare img {
+  width: 30vw;
+  height: 65vh;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
 /* responsive */
 @media only screen and (max-width: 960px) {
   .middle div:nth-of-type(even) {
