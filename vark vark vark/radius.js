@@ -7,12 +7,11 @@ let tenk = 0;
 let object = prompt(
   " 1. Cola 1200, 2. Sprite 1500, 3. Chocolate 2000, 4. Milk 2200, 5. Bread 1000, 6. Icecream 500, 7. Gum 150, 8. Vodka 15000"
 );
-let cleaned = object.match(/\d/);
 let cleaner = cleaned[0];
 let money = prompt("Insert Cash. Accepted amounts: 5000, 10000, 20000");
 let moneyneeded = "99999";
 switch (cleaner) {
-  case "1":
+  case "1" || "Cola":
     moneyneeded = "1200";
     bought = "Cola";
     break;
@@ -68,48 +67,36 @@ if (outputm >= 10000) {
   do {
     outputm -= 10000;
     tenk += 1;
-    console.log(tenk);
-    console.log(outputm);
   } while (outputm >= 10000 && outputm > 0);
 }
 if (outputm >= 5000) {
   do {
     outputm -= 5000;
     fivek += 1;
-    console.log(fivek);
-    console.log(outputm);
   } while (outputm >= 5000 && outputm > 0);
 }
 if (outputm >= 1000) {
   do {
     outputm -= 1000;
     onek += 1;
-    console.log(onek);
-    console.log(outputm);
   } while (outputm >= 1000 && outputm > 0);
 }
 if (outputm >= 500) {
   do {
     outputm -= 500;
     fhundred += 1;
-    console.log(fhundred);
-    console.log(outputm);
   } while (outputm >= 500 && outputm > 0);
 }
 if (outputm >= 100) {
   do {
     outputm -= 100;
     hundred += 1;
-    console.log(hundred);
-    console.log(outputm);
   } while (outputm >= 100 && outputm > 0);
 }
 if (outputm >= 50) {
   do {
     outputm -= 50;
     fifty += 1;
-    console.log(fifty);
-    console.log(outputm);
   } while (outputm >= 50 && outputm > 0);
 }
 let fiftynote = fifty + " 50₮, ";
