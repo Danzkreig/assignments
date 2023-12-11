@@ -469,12 +469,87 @@
 //     console.log("Winter");
 //     break;
 // }
-let num = prompt("Number");
-let secondaryw = prompt("up to the power of");
-if (parseInt(num) <= 10 && parseInt(secondaryw) <= 10) {
-  for (i = 1; i < parseInt(secondaryw) + 1; i++) {
-    console.log(parseInt(num) + "^" + i + "=" + parseInt(num) ** i);
+// let num = prompt("Number");
+// let secondaryw = prompt("up to the power of");
+// if (parseInt(num) <= 10 && parseInt(secondaryw) <= 10) {
+//   for (i = 1; i < parseInt(secondaryw) + 1; i++) {
+//     console.log(parseInt(num) + "^" + i + "=" + parseInt(num) ** i);
+//   }
+// } else {
+//   console.log("Fake");
+// }
+// let num = parseInt(prompt("how many floors :"));
+// let num2 = parseInt(prompt("how many doors per floor :"));
+// let num3 = parseInt(prompt("which door:"));
+// num3 = num3 - 1;
+// num = Math.floor(num3 / num2) + 1;
+// num2 = (num3 % num2) + 1;
+// console.log(num + " " + num2);
+// const str = "Bayn Baile"; //B. Dorj
+// function Name(str) {
+//   let split = str.split(" ");
+//   let answer = String(split[0]).charAt(0).toUpperCase();
+//   let answer2 = String(split[1]).charAt(0).toUpperCase();
+//   let last = split[1].split("");
+//   last[0] = answer2;
+//   let realanswer = last.join("");
+//   console.log(answer + ". " + realanswer);
+// }
+// Name(str);
+const animals = [
+  { type: "dog", sound: "woof" },
+  { type: "cow", sound: "moo" },
+  { type: "cat", sound: "meow" },
+];
+function animalsound(animal) {
+  for (i = 0; i < animals.length; i++) {
+    if (animals[i].type === animal) {
+      console.log("The " + animal + " goes " + animals[i].sound);
+    }
   }
-} else {
-  console.log("Fake");
 }
+let ask = prompt("Pick an animal, dog, cat, cow");
+animalsound(ask);
+let classmates = [
+  {
+    name: "Conscript",
+    DOB: 2001,
+    single: true,
+  },
+  {
+    name: "Ramzan Kadyrov",
+    DOB: 1983,
+    single: false,
+  },
+  {
+    name: "Vladmir Vladmirovich Putin",
+    DOB: 1975,
+    single: false,
+  },
+  {
+    name: "Ivan, The alcholic",
+    DOB: 2012,
+    single: true,
+  },
+  {
+    name: "SU-25 Pilot",
+    DOB: 1999,
+    single: true,
+  },
+];
+let singles = "";
+let over20 = " ";
+for (i = 0; i < classmates.length; i++) {
+  if (classmates[i].single === true) {
+    singles += " " + classmates[i].name + "";
+  }
+  if (classmates[i].DOB <= 2003) {
+    over20 += "" + classmates[i].name + " ";
+  }
+}
+console.log(
+  "These people are single:" +
+    singles +
+    ", And In your class these people are aged over 20: " +
+    over20
+);
