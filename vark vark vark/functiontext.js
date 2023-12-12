@@ -496,60 +496,226 @@
 //   console.log(answer + ". " + realanswer);
 // }
 // Name(str);
-const animals = [
-  { type: "dog", sound: "woof" },
-  { type: "cow", sound: "moo" },
-  { type: "cat", sound: "meow" },
-];
-function animalsound(animal) {
-  for (i = 0; i < animals.length; i++) {
-    if (animals[i].type === animal) {
-      console.log("The " + animal + " goes " + animals[i].sound);
-    }
-  }
-}
-let ask = prompt("Pick an animal, dog, cat, cow");
-animalsound(ask);
-let classmates = [
-  {
-    name: "Conscript",
-    DOB: 2001,
-    single: true,
-  },
-  {
-    name: "Ramzan Kadyrov",
-    DOB: 1983,
-    single: false,
-  },
-  {
-    name: "Vladmir Vladmirovich Putin",
-    DOB: 1975,
-    single: false,
-  },
-  {
-    name: "Ivan, The alcholic",
-    DOB: 2012,
-    single: true,
-  },
-  {
-    name: "SU-25 Pilot",
-    DOB: 1999,
-    single: true,
-  },
-];
-let singles = "";
-let over20 = " ";
-for (i = 0; i < classmates.length; i++) {
-  if (classmates[i].single === true) {
-    singles += " " + classmates[i].name + "";
-  }
-  if (classmates[i].DOB <= 2003) {
-    over20 += "" + classmates[i].name + " ";
-  }
-}
-console.log(
-  "These people are single:" +
-    singles +
-    ", And In your class these people are aged over 20: " +
-    over20
-);
+// const animals = [
+//   { type: "dog", sound: "woof" },
+//   { type: "cow", sound: "moo" },
+//   { type: "cat", sound: "meow" },
+// ];
+// function animalsound(animal) {
+//   for (i = 0; i < animals.length; i++) {
+//     if (animals[i].type === animal) {
+//       console.log("The " + animal + " goes " + animals[i].sound);
+//     }
+//   }
+// }
+// let ask = prompt("Pick an animal, dog, cat, cow");
+// animalsound(ask);
+// let classmates = [
+//   {
+//     name: "Conscript",
+//     DOB: 2001,
+//     single: true,
+//   },
+//   {
+//     name: "Ramzan Kadyrov",
+//     DOB: 1983,
+//     single: false,
+//   },
+//   {
+//     name: "Vladmir Vladmirovich Putin",
+//     DOB: 1975,
+//     single: false,
+//   },
+//   {
+//     name: "Ivan, The alcholic",
+//     DOB: 2012,
+//     single: true,
+//   },
+//   {
+//     name: "SU-25 Pilot",
+//     DOB: 1999,
+//     single: true,
+//   },
+// ];
+// let singles = "";
+// let over20 = " ";
+// for (i = 0; i < classmates.length; i++) {
+//   if (classmates[i].single === true) {
+//     singles += " " + classmates[i].name + "";
+//   }
+//   if (classmates[i].DOB <= 2003) {
+//     over20 += "" + classmates[i].name + " ";
+//   }
+// }
+// console.log(
+//   "These people are single:" +
+//     singles +
+//     ", And In your class these people are aged over 20: " +
+//     over20
+// );
+// Find index of
+// const fruits = [
+//   "apple",
+//   "durian",
+//   "mango",
+//   "apple",
+//   "banana",
+//   "dragonfruit",
+//   "orange",
+//   "grapes",
+//   "watermelon",
+//   "apricot",
+//   "papaya",
+//   "Kiwi",
+// ];
+// function findIndex(finding) {
+//   for (i = 0; i < fruits.length; i++) {
+//     if (fruits[i] === finding && i === 1) {
+//       return i + "st element of the array";
+//     } else if (fruits[i] === finding && i >= 10) {
+//       return i + "th element of the array";
+//     } else if (fruits[i] === finding) {
+//       return i + "nd element of the array";
+//     }
+//   }
+// }
+// console.log(findIndex("papaya"));
+// // Function Join
+// const something = ["John", "Hickle", "Huckleberry"];
+// function funcJoin(joiner, array) {
+//   output = array[0];
+//   for (i = 1; i < array.length; i++) {
+//     output += joiner + array[i];
+//   }
+//   return output;
+// }
+// console.log(funcJoin(" and ", something));
+// // function to string
+// const something2 = ["John", "Hickle", "Huckleberry"];
+// function funcToString(array) {
+//   output = array[0];
+//   for (i = 1; i < array.length; i++) {
+//     output += "," + array[i];
+//   }
+//   return output;
+// }
+// console.log(funcToString(something2));
+// //function includes
+// const something3 = ["John", "Hickle", "Huckleberry"];
+// function funcIncludes(includes, array) {
+//   output = 0;
+//   for (i = 0; i < array.length; i++) {
+//     if (array[i] === includes) {
+//       output++;
+//     }
+//   }
+//   if (output > 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(funcIncludes("John", something3));
+// const arr = [1, 3, 5, 22, 89, 46, 17, 31, 59];
+// function minMax(arr) {
+//   max = arr[0];
+//   min = arr[0];
+//   for (i = 1; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//     if (arr[i] < min) {
+//       min = arr[i];
+//     }
+//   }
+//   return min + " and " + max;
+// }
+// console.log(minMax(arr));
+// const arr = [5, 6, 4, 3, 2, 1];
+// function sort(arr) {
+//   store = arr.length;
+//   temp = 9999;
+//   output = [];
+//   j = 0;
+//   do {
+//     for (i = 0; i < store; i++) {
+//       if (temp > arr[i]) {
+//         temp = arr[i];
+//       }
+//     }
+//     output.push(temp);
+//     thing = arr.indexOf(temp);
+//     arr.splice(thing, 1);
+//     temp = 10000;
+//     j += 1;
+//   } while (j < store);
+//   console.log(output);
+// }
+// sort(arr);
+// const arr = [10, 9, 2, 5, 3, 7, 101, 18];
+// function sequence(arr) {
+//   output = [];
+//   temp = 0;
+//   for (i = 0; i < arr.length; i++) {
+//     if (arr[i] > temp) {
+//       temp = arr[i];
+//       output += " " + arr[i];
+//     }
+//   }
+//   console.log(output);
+// }
+// sequence(arr);
+// find special number
+// const arr = [2, 4, 7, 6, 8, 10];
+// function findspecial(arr) {
+//   even = 0;
+//   evenitems = 0;
+//   odd = 0;
+//   odditems = 0;
+//   for (i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 == 0) {
+//       even += 1;
+//       evenitems += arr[i];
+//     } else {
+//       odd += 1;
+//       odditems += arr[i];
+//     }
+//   }
+//   if (even > odd && odditems === 0) {
+//     return "No odd items";
+//   } else if (odd > even && evenitems === 0) {
+//     return "No even items";
+//   } else if (even > odd) {
+//     return odditems;
+//   } else if (odd > even) {
+//     return evenitems;
+//   } else {
+//     return "No special number";
+//   }
+// }
+// console.log(findspecial(arr));
+// const cube = [
+//   [2, 7, 6],
+//   [9, 5, 1],
+//   [4, 3, 8],
+// ];
+// function checkcube(arr) {
+//   temp = 0;
+//   tarray = [];
+//   for (i = 0; i < arr.length; i++) {
+//     bs = arr[i];
+//     for (j = 0; j < arr[i].length; j++) {
+//       temp += arr[i][j];
+//     }
+//     tarray.push(temp);
+//     temp = 0;
+//   }
+//   for (i = 0; i < tarray.length - 1; i++) {
+//     if (tarray[i] !== tarray[i + 1]) {
+//       return "Nu uh";
+//     } else {
+//       return "Its all even";
+//     }
+//   }
+// }
+// console.log(checkcube(cube));
