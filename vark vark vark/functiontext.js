@@ -719,3 +719,286 @@
 //   }
 // }
 // console.log(checkcube(cube));
+// const arr = [1, 2, 3, 4];
+// function test(arr, num) {
+//   console.log(arr.concat(num));
+//   arr.pop();
+//   console.log(arr);
+// }
+// test(arr, 123);
+// [1,2,3,4,num]
+// average
+// const arr = [1, 2, 3, 4];
+// function average(arr) {
+//   sum = 0;
+//   for (i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum / arr.length;
+// }
+// average
+// console.log(average(arr));
+// const arr = [1, 6, 3, 4];
+// function max(arr) {
+//   max = arr[0];
+//   for (i = 1; i < arr.length; i++) {
+//     if (max < arr[i]) {
+//       max = arr[i];
+//     }
+//   }
+//   return max;
+// }
+// console.log(max(arr));
+// reverse
+// const arr = [1, 33, 6, 3, 4, 8, 34, 22];
+// function reverse(ar  r) {
+//   output = [];
+//   for (i = arr.length - 1; i >= 0; i--) {
+//     output.push(arr[i]);
+//   }
+//   return output;
+// }
+// console.log(reverse(arr));
+// squared
+// const arr = [1, 6, 3, 4];
+// function square(arr) {
+//   output = [];
+//   for (i = 0; i < arr.length; i++) {
+//     output.push(arr[i] ** 2);
+//   }
+//   return output;
+// }
+// console.log(square(arr));
+// remove duplicates
+// const arr = [1, 6, 3, 4, 4, 3, 8];
+// function removedup(arr) {
+//   output = [];
+//   for (i = 0; i < arr.length; i++) {
+//     if (output.includes(arr[i])) {
+//     } else {
+//       output.push(arr[i]);
+//     }
+//   }
+//   return output;
+// }
+// console.log(removedup(arr));
+// /**
+//  * @param {number[]} nums
+//  * @param {number} target
+//  * @return {number[]}
+//  */
+// const arr = [3, 2, 4];
+// var twoSum = function (nums, target) {
+//   output = [];
+//   fuse = 0;
+//   for (i = 0; i < nums.length; i++) {
+//     for (j = 0; j < nums.length; j++) {
+//       if (nums[i] + nums[j] == target && fuse === 0) {
+//         k = i;
+//         l = j;
+//         fuse + 1;
+//       }
+//     }
+//   }
+//   console.log(l, k);
+//   output.push(l, k);
+//   return output;
+// };
+// console.log(twoSum(arr, 6));
+// let living = 0;
+// let dead = 0;
+// function deathplace() {
+//   compare = Math.random();
+//   if (compare < 0.3) {
+//     return " Donbass";
+//   } else if (compare < 0.6) {
+//     return " Kherson";
+//   } else if (compare < 0.9) {
+//     return " Bakhmut";
+//   } else {
+//     return " Luhansk";
+//   }
+// }
+// function deadoralive() {
+//   compare = Math.random();
+//   if (compare >= 0.5) {
+//     return " Alive and fighting in " + deathplace();
+//   } else {
+//     return " KIA at " + deathplace();
+//   }
+// }
+// function firstname() {
+//   compare = Math.random();
+//   if (compare < 0.05) {
+//     return "Yuri ";
+//   } else if (compare < 0.1) {
+//     return "Joseph ";
+//   } else if (compare < 0.15) {
+//     return "Oleg ";
+//   } else if (compare < 0.2) {
+//     return "Artyom ";
+//   } else if (compare < 0.25) {
+//     return "Kirill ";
+//   } else if (compare < 0.3) {
+//     return "Aleksandr ";
+//   } else if (compare < 0.35) {
+//     return "Victor ";
+//   } else if (compare < 0.4) {
+//     return "Romanov ";
+//   } else if (compare < 0.45) {
+//     return "Nikita ";
+//   } else if (compare < 0.5) {
+//     return "Yevgeny ";
+//   } else if (compare < 0.55) {
+//     return "Leonid ";
+//   } else if (compare < 0.6) {
+//     return "Ivan ";
+//   } else if (compare < 0.65) {
+//     return "Igor ";
+//   } else if (compare < 0.7) {
+//     return "Dimitry ";
+//   } else if (compare < 0.75) {
+//     return "Lev ";
+//   } else if (compare < 0.8) {
+//     return "Sergey ";
+//   } else if (compare < 0.85) {
+//     return "Maxim ";
+//   } else if (compare < 0.9) {
+//     return "Nikolai ";
+//   } else if (compare < 0.95) {
+//     return "Pasha ";
+//   } else {
+//     return "Mikhail ";
+//   }
+// }
+// function lastname() {
+//   compare = Math.random();
+//   if (compare < 0.05) {
+//     return "Yurinov";
+//   } else if (compare < 0.1) {
+//     return "Petrov";
+//   } else if (compare < 0.15) {
+//     return "Rostova";
+//   } else if (compare < 0.2) {
+//     return "Kuznetsov";
+//   } else if (compare < 0.25) {
+//     return "Karenina";
+//   } else if (compare < 0.3) {
+//     return "Sokolov";
+//   } else if (compare < 0.35) {
+//     return "Popov";
+//   } else if (compare < 0.4) {
+//     return "Ilyin";
+//   } else if (compare < 0.45) {
+//     return "Pushkin";
+//   } else if (compare < 0.5) {
+//     return "Stepanov";
+//   } else if (compare < 0.55) {
+//     return "Vasiliev";
+//   } else if (compare < 0.6) {
+//     return "Ivanov";
+//   } else if (compare < 0.65) {
+//     return "Morozov";
+//   } else if (compare < 0.7) {
+//     return "Preobrazhensky";
+//   } else if (compare < 0.75) {
+//     return "Alekseev";
+//   } else if (compare < 0.8) {
+//     return "Turgenev";
+//   } else if (compare < 0.85) {
+//     return "Federov";
+//   } else if (compare < 0.9) {
+//     return "Borisyuk";
+//   } else if (compare < 9.5) {
+//     return "Nikolaev";
+//   } else {
+//     return "Gurkin";
+//   }
+// }
+// function yearofdeath() {
+//   return Math.round(Math.random() * (2023 - 2014) + 2014);
+// }
+// let thing = parseInt(prompt("number of fighters?"));
+// let dummy = document.querySelectorAll("div.dummy");
+// let content = document.createTextNode("warhasbegun");
+// let bars = document.createElement("div");
+// const frontline = document.getElementById("div1");
+// for (let i = 1; i <= thing; i++) {
+//   bars = document.createElement("div");
+//   content = document.createTextNode(
+//     firstname() + lastname() + " | " + deadoralive()
+//   );
+//   if (deadoralive() == " Alive and fighting in " + deathplace()) {
+//     living += 1;
+//   } else {
+//     dead += 1;
+//   }
+//   bars.appendChild(content);
+//   document.body.insertBefore(bars, frontline);
+// }
+// window.alert(
+//   living +
+//     " survived the war. " +
+//     dead +
+//     " Didn't. " +
+//     Math.round((100 * living) / thing) +
+//     "% of total number of troops survived."
+// );
+// const email = document.getElementById("email");
+// const emailval = email.value;
+// function validation(inputs) {
+//   emailval = document.getElementById("email").value;
+//   correct = 0;
+//   cmv = emailval.split("");
+//   for (i = 0; i < cmv.length; i++) {
+//     if (cmv[i] == "@") {
+//       correct += 1;
+//     }
+//     if (cmv[i] == ".") {
+//       correct += 1;
+//     }
+//   }
+//   if (correct == 2) {
+//     if (
+//       document.getElementById("psw").value ===
+//       document.getElementById("repeatPsw").value
+//     ) {
+//       if (document.getElementById("psw").value.length >= 8) {
+//         return true;
+//       } else {
+//         return false;
+//       }
+//     } else {
+//       return false;
+//     }
+//   } else {
+//     return false;
+//   }
+//   // 2 password хоорондоо адил байгаа эсэх
+//   // password ийн урт 8с урт байх ёстой
+//   // email дотор заавал @ болон . орсон байх
+//   // эдгээр нөхцөл биелсэн бол true буцаана
+
+//   //жишээ хэрэглээ
+//   console.log("Email input ийн урт: ", inputs.email.value.length);
+//   return false;
+// }
+// // бүх input үүдийг inputs-д авч байна
+// const inputs = document.getElementsByTagName("input");
+// // хэдэн input байгааг тоолж байна
+// const howManyInputs = document.getElementsByTagName("input").length;
+
+// for (let i = 0; i < howManyInputs; i++) {
+//   // input бүрт addEventListener өгч change эвэнтийг сонсож байна
+//   inputs[i].addEventListener("change", () => {
+//     // input ийн утга өөрчлөгдөх бүрт 3н input үүдийн утгуудыг харж болно
+//     console.log("Email-ийн утга: ", inputs.email.value);
+//     console.log("Password-ийн утга: ", inputs.psw.value);
+//     console.log("repeatPsw-ийн утга: ", inputs.repeatPsw.value);
+
+//     // бүх input үүдийг авч зөв эсэхийг шалгах фүнкц дуудаж байна
+//     if (validation(inputs)) {
+//       document.querySelector(".registerBtn").disabled = false;
+//     }
+//   });
+// }
