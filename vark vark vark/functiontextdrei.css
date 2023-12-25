@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+body {
+  background-image: url(https://static01.nyt.com/images/2023/03/09/world/bakhmut-river-bridge-satellite/bakhmut-river-bridge-satellite-superJumbo-v2.jpg?quality=75&auto=webp);
+  background-repeat: no-repeat;
+  background-size: coverx;
+}
+h1 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.container {
+  width: 300px;
+  background-color: #eaecf0;
+  border-radius: 8px;
+}
+
+.addcard {
+  margin-top: auto;
+  height: 50px;
+  border: 0;
+  background-color: #eaecf0;
+  border-radius: 4px;
+}
+.addcard:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
