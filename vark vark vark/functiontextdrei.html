@@ -14,28 +14,78 @@
   </head>
   <body>
     <div class="flex center row gap5vw margin-top">
-      <div class="container flex column">
+      <div class="container flex column todo">
         <h1 class="">To Do</h1>
         <h3 class="counter"></h3>
-
-        <button class="addcard">+ Add card</button>
+        <div class="bigboy" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <span id="todo"></span>
+        </div>
+        <button class="addcard todocard">+ Add card</button>
       </div>
-      <div class="container flex column">
+      <div class="container flex column progress">
         <h1>In Progress</h1>
         <h3 class="counter"></h3>
-        <button class="addcard">+ Add card</button>
+        <div class="bigboy" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <span id="progressid"></span>
+        </div>
+        <button class="addcard todoprogress">+ Add card</button>
       </div>
-      <div class="container flex column">
+      <div class="container flex column stuck">
         <h1>Stuck</h1>
         <h3 class="counter"></h3>
-        <button class="addcard">+ Add card</button>
+        <div class="bigboy" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <span id="stuck"></span>
+        </div>
+        <button class="addcard todostuck">+ Add card</button>
       </div>
-      <div class="container flex column">
+      <div class="container flex column done">
         <h1>Done</h1>
         <h3 class="counter"></h3>
-        <button class="addcard">+ Add card</button>
+        <div class="bigboy" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <span id="done"></span>
+        </div>
+        <button class="addcard tododone">+ Add card</button>
       </div>
     </div>
-    <script src="functiontextdrei.js" async defer></script>
+    <div class="backdrop" id="backdrop">
+      <div class="thing">
+        <form>
+          <h1>Add Task</h1>
+          <div>
+            <label name="title">Title</label>
+            <input id="title" name="title" placeholder="Title" />
+          </div>
+          <div>
+            <label name="description">Description</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              cols="50"
+              placeholder="Title"
+            ></textarea>
+          </div>
+          <div>
+            <label name="status">Status</label>
+            <select name="status" id="status">
+              <option value="todo">To do</option>
+              <option value="inprogress">In progress</option>
+              <option value="stuck">Stuck</option>
+              <option value="done">Done</option>
+            </select>
+          </div>
+          <div>
+            <label name="priority">Priority</label>
+            <select name="priority" id="priority">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <button type="button" id="submit">Add Task</button>
+        </form>
+      </div>
+    </div>
   </body>
+  <script src="functiontextdrei.js" async defer></script>
 </html>
